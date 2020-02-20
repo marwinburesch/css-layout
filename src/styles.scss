@@ -1,8 +1,4 @@
-$primary-background-color: floralwhite;
-$primary-text-color: rebeccapurple;
-$nav-background-color: #333;
-$nav__button-hover-color: #666;
-$nav__button-active-color: aquamarine;
+@use "variables.scss" as variables;
 
 *,
 *::after,
@@ -12,8 +8,8 @@ $nav__button-active-color: aquamarine;
 
 body {
   margin: 0;
-  background-color: $primary-background-color;
-  color: $primary-text-color;
+  background-color: variables.$primary-background-color;
+  color: variables.$primary-text-color;
   font-size: 16px;
 }
 
@@ -22,13 +18,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $nav-background-color;
+  background-color: variables.$nav-background-color;
   display: flex;
   justify-content: center;
 }
 
 .bottom-nav__button {
-  background-color: $nav-background-color;
+  background-color: variables.$nav-background-color;
   border: none;
   outline: none;
   height: 60px;
@@ -39,14 +35,14 @@ body {
 }
 
 .bottom-nav__button:hover {
-  background-color: $nav__button-hover-color;
+  background-color: variables.$nav__button-hover-color;
   font-size: 1.8rem;
 }
 
 .bottom-nav__button--active {
-  background-color: $nav__button-active-color;
+  background-color: variables.$nav__button-active-color;
 }
 
 .bottom-nav__button--active:hover {
-  background-color: $nav__button-active-color;
+  background-color: variables.$nav__button-active-color;
 }
