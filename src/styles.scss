@@ -1,3 +1,9 @@
+$primary-background-color: floralwhite;
+$primary-text-color: rebeccapurple;
+$nav-background-color: #333;
+$nav__button-hover-color: #666;
+$nav__button-active-color: aquamarine;
+
 *,
 *::after,
 *::before {
@@ -6,8 +12,8 @@
 
 body {
   margin: 0;
-  background-color: floralwhite;
-  color: rebeccapurple;
+  background-color: $primary-background-color;
+  color: $primary-text-color;
   font-size: 16px;
 }
 
@@ -16,13 +22,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #333;
+  background-color: $nav-background-color;
   display: flex;
   justify-content: center;
 }
 
 .bottom-nav__button {
-  background-color: #333;
+  background-color: $nav-background-color;
   border: none;
   outline: none;
   height: 60px;
@@ -33,14 +39,14 @@ body {
 }
 
 .bottom-nav__button:hover {
-  background-color: #666;
+  background-color: $nav__button-hover-color;
   font-size: 1.8rem;
 }
 
 .bottom-nav__button--active {
-  background-color: aquamarine;
+  background-color: $nav__button-active-color;
 }
 
 .bottom-nav__button--active:hover {
-  background-color: aquamarine;
+  background-color: $nav__button-active-color;
 }
