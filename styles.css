@@ -17,4 +17,6 @@ body {
   right: 0;
   bottom: 0;
   background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
 }
