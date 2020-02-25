@@ -16,9 +16,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
+  background-color: lightskyblue;
 }
 
 .bottom-nav__button {
