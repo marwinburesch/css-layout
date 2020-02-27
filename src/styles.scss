@@ -7,17 +7,44 @@
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0;
   background-color: variables.$primary-background-color;
   color: variables.$primary-text-color;
   font-size: 16px;
 }
 
+header {
+  height: 80px;
+  background-color: variables.$nav-background-color;
+}
+
+main {
+  overflow: auto;
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content {
+  flex-basis: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: auto;
+}
+
+aside {
+  flex-basis: 20%;
+  background-color: variables.$nav-background-color;
+}
+
 .bottom-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  height: 80px;
   background-color: variables.$nav-background-color;
   display: flex;
   justify-content: center;
@@ -44,5 +71,13 @@ body {
 }
 
 .bottom-nav__button--active:hover {
+  background-color: variables.$nav__button-active-color;
+}
+
+.card {
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: 20px;
   background-color: variables.$nav__button-active-color;
 }

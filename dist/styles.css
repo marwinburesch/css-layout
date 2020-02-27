@@ -5,17 +5,40 @@
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0;
   background-color: floralwhite;
   color: rebeccapurple;
   font-size: 16px;
 }
 
+header {
+  height: 80px;
+  background-color: #333;
+}
+
+main {
+  overflow: auto;
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content {
+  flex-basis: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: auto;
+}
+
+aside {
+  flex-basis: 20%;
+  background-color: #333;
+}
+
 .bottom-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 80px;
   background-color: #333;
   display: flex;
   justify-content: center;
@@ -42,6 +65,14 @@ body {
 }
 
 .bottom-nav__button--active:hover {
+  background-color: aquamarine;
+}
+
+.card {
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: 20px;
   background-color: aquamarine;
 }
 
